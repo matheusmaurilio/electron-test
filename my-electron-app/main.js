@@ -15,3 +15,5 @@ app.whenReady().then(() => {
   ipcMain.handle('ping', () => 'pong')
   createWindow()
 })
+
+require('update-electron-app')();
